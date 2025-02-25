@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@nuxthub/core'],
+  modules: ['@nuxt/eslint', '@nuxthub/core', '@nuxtjs/seo'],
   eslint: {
     config: {
       stylistic: true
