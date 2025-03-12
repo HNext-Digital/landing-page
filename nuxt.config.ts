@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxtjs/tailwindcss',
     '@nuxt/fonts',
+    '@nuxtjs/i18n',
   ],
   devtools: { enabled: true },
   compatibilityDate: '2024-11-01',
@@ -28,5 +29,16 @@ export default defineNuxtConfig({
     families: [
       { name: 'Raleway', provider: 'google' },
     ],
+  },
+  i18n: {
+    locales: ['en', 'fr'],
+    defaultLocale: 'fr',
+    strategy: 'prefix',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+    },
+    vueI18n: './i18n.config.ts',
   },
 })
