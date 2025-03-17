@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { inView, animate } from 'motion'
 
+const props = withDefaults(defineProps<{
+  delay?: number
+  is?: string
+}>(), {
+  delay: 0,
+  is: 'div',
+})
+
 let stopViewTracking: VoidFunction = () => {}
 
 const container = ref<HTMLElement>()
@@ -11,12 +19,12 @@ onMounted(() => {
   stopViewTracking = inView(container.value, () => {
     if (!container.value) return
 
-    animate(container.value, { scale: 1, opacity: 1 })
+    animate(container.value, { opacity: 1 }, { delay: props.delay })
 
     return () => {
       if (!container.value) return
 
-      animate(container.value, { scale: 0.2, opacity: 0 })
+      animate(container.value, { opacity: 0 })
     }
   })
 })
@@ -25,10 +33,11 @@ onUnmounted(() => stopViewTracking())
 </script>
 
 <template>
-  <div
+  <component
+    :is="is"
     ref="container"
-    class="transform-[scale(0.2)] opacity-0"
+    class="opacity-0"
   >
     <slot />
-  </div>
+  </component>
 </template>

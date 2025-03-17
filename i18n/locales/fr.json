@@ -6,5 +6,9 @@
   },
   "contact": {
     "cta": "Contactez-nous"
+  },
+  "hero": {
+    "slogan": "Rapidité. Qualité. Innovation.",
+    "description": "Nous aidons les entreprises et les développeurs à créer des sites web, applications et outils performants, évolutifs et tournés vers l'avenir."
   }
 }

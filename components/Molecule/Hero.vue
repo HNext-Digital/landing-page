@@ -1,10 +1,48 @@
 <template>
-  <div class="hero relative px-4 border-t-1 border-b-1 border-slate-300">
+  <AtomMotionOpacityScale class="hero relative px-4 border-t-1 border-b-1 border-slate-300">
     <AtomHeroBg class="-z-10" />
-    <AtomOpacityScaleMotion class="container mx-auto py-8">
-      <div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi aliquid odit animi! Aperiam fugiat maiores quaerat nisi accusamus saepe rem, vero quis omnis magni hic cum eaque nihil provident. Iste numquam quod quam quae fugit ratione eum. Beatae fugiat consequuntur molestias ea ullam voluptas asperiores placeat deserunt cupiditate exercitationem praesentium accusamus, consectetur inventore fuga quas voluptatum aut modi reprehenderit accusantium? Repellendus quam ducimus omnis exercitationem assumenda voluptatibus nostrum ut ipsum eum, non magnam repudiandae architecto voluptate voluptatem et, optio iste veniam soluta perspiciatis quae! Debitis exercitationem iure asperiores veritatis nobis ipsum cum, esse totam ullam? Modi et sed dolores rem?</p>
+    <div class="container mx-auto py-8">
+      <div class="flex flex-col gap-10 justify-center items-center md:flex-row">
+        <div class="md:py-10">
+          <img
+            src="/images/illustration.svg"
+            alt=""
+            class="w-6xl max-w-full"
+          >
+        </div>
+        <div>
+          <AtomMotionOpacityScale :delay=".1">
+            <AtomTitle :level="1">
+              <ClientOnly
+                fallback-tag="span"
+                :fallback="$t('hero.slogan')"
+              >
+                <AtomMotionSplitText
+                  is="span"
+                  :text="$t('hero.slogan')"
+                />
+              </ClientOnly>
+            </AtomTitle>
+          </AtomMotionOpacityScale>
+          <AtomTitle
+            is="p"
+            :level="4"
+            class="mt-4"
+          >
+            <ClientOnly
+              fallback-tag="span"
+              :fallback="$t('hero.description')"
+            >
+              <AtomMotionSplitText
+                is="span"
+                :text="$t('hero.description')"
+                :step-delay="0.02"
+                :disable-transform="true"
+              />
+            </ClientOnly>
+          </AtomTitle>
+        </div>
       </div>
-    </AtomOpacityScaleMotion>
-  </div>
+    </div>
+  </AtomMotionOpacityScale>
 </template>

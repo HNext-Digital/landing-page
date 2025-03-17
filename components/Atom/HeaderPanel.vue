@@ -1,6 +1,6 @@
 <template>
   <USlideover :title="$t('contact.cta')">
-    <AtomOpacityScaleMotion>
+    <AtomMotionOpacityScale>
       <UButton
         :label="$t('contact.cta')"
         :icon="'i-lucide-mail-plus'"
@@ -14,7 +14,7 @@
         variant="solid"
         class="cursor-pointer md:hidden"
       />
-    </AtomOpacityScaleMotion>
+    </AtomMotionOpacityScale>
 
     <template #body>
       <p>Test</p>

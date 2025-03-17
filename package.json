@@ -30,10 +30,13 @@
   "devDependencies": {
     "@nuxtjs/seo": "^3.0.1",
     "@types/node-telegram-bot-api": "^0.64.7",
-    "wrangler": "^4.0.0"
+    "wrangler": "^3.109.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "sharp",
       "vue-demi",
       "workerd"
     ]

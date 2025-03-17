@@ -6,5 +6,9 @@
   },
   "contact": {
     "cta": "Contact us"
+  },
+  "hero": {
+    "slogan": "Speed. Quality. Innovation.",
+    "description": "We help businesses and developers by creating world-class, high-performance websites, web apps, and tools that drive success."
   }
 }

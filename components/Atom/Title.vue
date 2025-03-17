@@ -1,34 +1,40 @@
 <script setup lang="ts">
 const props = withDefaults(defineProps<{
-  level: number
+  level?: number
+  displayLevel?: number
+  is?: string
 }>(), {
-  level: 1,
+  is: 'h',
 })
 
-const styleByLevel = computed(() => {
-  switch (props.level) {
+const titleTag = computed(() => {
+  return props.level ? (props.is === 'h' ? 'h' + props.level : props.is) : 'p'
+})
+
+const titleClasses = computed(() => {
+  switch (props.displayLevel ?? props.level) {
     case 1:
-      return 'text-4xl font-black'
+      return 'text-6xl font-black'
     case 2:
-      return 'text-3xl font-bold'
+      return 'text-5xl font-bold'
     case 3:
-      return 'text-2xl font-bold'
+      return 'text-4xl font-bold'
     case 4:
-      return 'text-xl font-bold'
+      return 'text-3xl font-bold'
     case 5:
-      return 'text-lg font-bold'
+      return 'text-2xl font-bold'
     case 6:
-      return 'text-base font-bold'
+      return 'text-lg font-bold'
     default:
-      return 'text-base font-bold'
+      return 'text-lg font-bold'
   }
 })
 </script>
 
 <template>
   <component
-    :is="'h' + level"
-    :class="styleByLevel"
+    :is="titleTag"
+    :class="titleClasses"
   >
     <slot />
   </component>
