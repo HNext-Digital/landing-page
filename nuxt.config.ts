@@ -6,11 +6,18 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxthub/core',
     '@nuxtjs/seo',
-    '@nuxtjs/tailwindcss',
     '@nuxt/fonts',
     '@nuxtjs/i18n',
+    '@vueuse/nuxt',
+    '@nuxt/ui',
   ],
   devtools: { enabled: true },
+  css: ['~/assets/css/main.css'],
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth',
+    },
+  },
   compatibilityDate: '2024-11-01',
   eslint: {
     config: {
@@ -19,7 +26,7 @@ export default defineNuxtConfig({
   },
   fonts: {
     defaults: {
-      weights: [300, 400, 500, 700],
+      weights: [300, 400, 500, 700, 900],
       styles: ['normal', 'italic'],
       subsets: [
         'latin-ext',
@@ -27,7 +34,7 @@ export default defineNuxtConfig({
       ],
     },
     families: [
-      { name: 'Raleway', provider: 'google' },
+      { name: 'Poppins', provider: 'google' },
     ],
   },
   i18n: {
