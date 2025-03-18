@@ -9,7 +9,7 @@
         >
           <h1 class="text-2xl font-bold">
             <IconLogo
-              class="w-30 block fill-current"
+              class="w-20 block fill-current"
               alt="HNext Digital"
             />
           </h1>

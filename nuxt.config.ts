@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxthub/core',
-    '@nuxtjs/seo',
     '@nuxt/fonts',
     '@nuxtjs/i18n',
     '@vueuse/nuxt',
@@ -13,11 +12,6 @@ export default defineNuxtConfig({
   ],
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  router: {
-    options: {
-      scrollBehaviorType: 'smooth',
-    },
-  },
   compatibilityDate: '2024-11-01',
   nitro: {
     experimental: {
@@ -43,14 +37,19 @@ export default defineNuxtConfig({
     ],
   },
   i18n: {
-    locales: ['en', 'fr'],
     defaultLocale: 'fr',
-    strategy: 'prefix',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-    },
-    vueI18n: './i18n.config.ts',
+    langDir: 'locales',
+    locales: [
+      {
+        code: 'en',
+        language: 'en-US',
+        file: 'en.ts',
+      },
+      {
+        code: 'fr',
+        language: 'fr-FR',
+        file: 'fr.ts',
+      },
+    ],
   },
 })
