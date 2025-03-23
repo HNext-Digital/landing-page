@@ -14,7 +14,7 @@ import DigitalIllustration from './DigitalIllustration.json'
     />
     <template #fallback>
       <div
-        style="height: 300px; width: 450px;"
+        style="height: 300px; width: 400px;"
         class="max-w-full"
       />
     </template>
