@@ -4,11 +4,7 @@
     <div class="container mx-auto py-8">
       <div class="flex flex-col gap-10 justify-center items-center md:flex-row">
         <div class="md:py-10">
-          <img
-            src="/images/illustration.svg"
-            alt=""
-            class="w-6xl max-w-full"
-          >
+          <AtomSvgDigitalIllustration class="w-6xl max-w-full" />
         </div>
         <div>
           <AtomTitle :level="1">

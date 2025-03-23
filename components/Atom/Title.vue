@@ -14,19 +14,19 @@ const titleTag = computed(() => {
 const titleClasses = computed(() => {
   switch (props.displayLevel ?? props.level) {
     case 1:
-      return 'text-6xl font-black'
+      return 'text-6xl leading-[1.2] font-black'
     case 2:
-      return 'text-5xl font-bold'
+      return 'text-5xl leading-[1.2] font-bold'
     case 3:
-      return 'text-4xl font-bold'
+      return 'text-4xl leading-[1.2] font-bold'
     case 4:
-      return 'text-3xl font-bold'
+      return 'text-3xl leading-[1.2]  font-bold'
     case 5:
-      return 'text-2xl font-bold'
+      return 'text-2xl leading-[1.2] font-bold'
     case 6:
-      return 'text-lg font-bold'
+      return 'text-lg leading-[1.2] font-bold'
     default:
-      return 'text-lg font-bold'
+      return 'text-lg leading-[1.2] font-bold'
   }
 })
 </script>
