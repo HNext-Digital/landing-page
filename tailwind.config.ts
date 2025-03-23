@@ -9,7 +9,7 @@ export default <Partial<Config>>{
       },
     },
     fontFamily: {
-      sans: ['Raleway', 'system-ui', 'Arial'],
+      sans: ['Poppins', 'system-ui', 'Arial'],
       serif: ['ui-serif', 'Georgia', 'Times'],
       mono: ['ui-monospace', 'Consolas'],
     },

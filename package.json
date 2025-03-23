@@ -1,7 +1,5 @@
 {
-  "name": "nuxt-app",
   "private": true,
-  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -13,21 +11,28 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/eslint": "1.1.0",
-    "@nuxt/fonts": "0.10.3",
-    "@nuxthub/core": "0.8.17",
-    "@nuxtjs/i18n": "9.2.1",
-    "@nuxtjs/tailwindcss": "6.13.1",
-    "eslint": "^9.0.0",
-    "node-telegram-bot-api": "^0.66.0",
-    "nuxt": "^3.15.4",
+    "@nuxt/eslint": "1.2.0",
+    "@nuxt/fonts": "0.11.0",
+    "@nuxt/ui": "^3.0.0",
+    "@nuxthub/core": "0.8.18",
+    "@nuxtjs/i18n": "9.3.1",
+    "@vueuse/nuxt": "13.0.0",
+    "eslint": "^9.22.0",
+    "nuxt": "^3.16.0",
     "vue": "latest",
     "vue-router": "latest"
   },
-  "packageManager": "pnpm@10.6.2+sha512.47870716bea1572b53df34ad8647b42962bc790ce2bf4562ba0f643237d7302a3d6a8ecef9e4bdfc01d23af1969aa90485d4cebb0b9638fa5ef1daef656f6c1b",
+  "packageManager": "pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6",
   "devDependencies": {
-    "@nuxtjs/seo": "^2.2.0",
-    "@types/node-telegram-bot-api": "^0.64.7",
-    "wrangler": "^3.109.3"
+    "wrangler": "4.1.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "sharp",
+      "vue-demi",
+      "workerd"
+    ]
   }
 }

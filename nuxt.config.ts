@@ -5,13 +5,19 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxthub/core',
-    '@nuxtjs/seo',
-    '@nuxtjs/tailwindcss',
     '@nuxt/fonts',
     '@nuxtjs/i18n',
+    '@vueuse/nuxt',
+    '@nuxt/ui',
   ],
   devtools: { enabled: true },
+  css: ['~/assets/css/main.css'],
   compatibilityDate: '2024-11-01',
+  nitro: {
+    experimental: {
+      openAPI: true,
+    },
+  },
   eslint: {
     config: {
       stylistic: true,
@@ -19,7 +25,7 @@ export default defineNuxtConfig({
   },
   fonts: {
     defaults: {
-      weights: [300, 400, 500, 700],
+      weights: [300, 400, 500, 700, 900],
       styles: ['normal', 'italic'],
       subsets: [
         'latin-ext',
@@ -27,18 +33,23 @@ export default defineNuxtConfig({
       ],
     },
     families: [
-      { name: 'Raleway', provider: 'google' },
+      { name: 'Poppins', provider: 'google' },
     ],
   },
   i18n: {
-    locales: ['en', 'fr'],
     defaultLocale: 'fr',
-    strategy: 'prefix',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-    },
-    vueI18n: './i18n.config.ts',
+    langDir: 'locales',
+    locales: [
+      {
+        code: 'en',
+        language: 'en-US',
+        file: 'en.ts',
+      },
+      {
+        code: 'fr',
+        language: 'fr-FR',
+        file: 'fr.ts',
+      },
+    ],
   },
 })
