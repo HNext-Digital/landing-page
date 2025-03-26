@@ -10,6 +10,7 @@ import bg from './bg.json'
         :animation-data="bg"
         :height="764"
         :width="1997"
+        renderer="canvas"
       />
     </ClientOnly>
   </div>

@@ -10,6 +10,7 @@ import wave from './wave.json'
         :animation-data="wave"
         :height="1920"
         :width="3840"
+        renderer="canvas"
       />
     </ClientOnly>
   </div>
