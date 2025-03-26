@@ -31,6 +31,8 @@ jobs:
         run: pnpx nuxthub@latest ensure
 
       - name: Build application
+        env:
+          NUXT_PUBLIC_BASE_URL: ${{ vars.NUXT_PUBLIC_BASE_URL }}
         run: pnpm build
 
       - name: Deploy to NuxtHub
@@ -38,3 +40,5 @@ jobs:
         id: deploy
         with:
           project-key: landing-page-tato
+        env:
+          NUXT_PUBLIC_BASE_URL: ${{ vars.NUXT_PUBLIC_BASE_URL }}
