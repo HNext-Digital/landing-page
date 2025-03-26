@@ -12,6 +12,14 @@ export default defineNuxtConfig({
   ],
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+  runtimeConfig: {
+    public: {
+      baseUrl: process.env.NUXT_PUBLIC_BASE_URL || 'https://hnext.fr',
+      i18n: {
+        baseUrl: process.env.NUXT_PUBLIC_BASE_URL || 'https://hnext.fr',
+      },
+    },
+  },
   compatibilityDate: '2024-11-01',
   nitro: {
     experimental: {
@@ -33,7 +41,6 @@ export default defineNuxtConfig({
     ],
   },
   i18n: {
-    baseUrl: process.env.NUXT_PUBLIC_BASE_URL ?? 'http://localhost:3000',
     defaultLocale: 'fr',
     langDir: 'locales',
     locales: [
