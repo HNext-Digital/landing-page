@@ -26,17 +26,14 @@ export default defineNuxtConfig({
   fonts: {
     defaults: {
       weights: [300, 400, 500, 700, 900],
-      styles: ['normal', 'italic'],
-      subsets: [
-        'latin-ext',
-        'latin',
-      ],
     },
     families: [
       { name: 'Poppins', provider: 'google' },
+      { name: 'Martel', provider: 'google' },
     ],
   },
   i18n: {
+    baseUrl: 'http://localhost:3000',
     defaultLocale: 'fr',
     langDir: 'locales',
     locales: [

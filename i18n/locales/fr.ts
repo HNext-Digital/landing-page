@@ -8,7 +8,8 @@ export default {
     cta: 'Contactez-nous',
   },
   hero: {
-    slogan: 'Rapidité. Qualité. Innovation.',
-    description: 'Nous aidons les entreprises et les développeurs à créer des sites web, applications et outils performants, évolutifs et tournés vers l\'avenir.',
+    slogan: 'Une équipe, Une mission : Votre succès.',
+    description: 'HNext Digital vous accompagne dans votre transformation numérique avec des applications web et mobiles sur mesure.',
+    cta: 'Contactez-nous dès aujourd\'hui !',
   },
 }

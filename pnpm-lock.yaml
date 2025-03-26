@@ -42,6 +42,9 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1(vue@3.5.13(typescript@5.8.2))
     devDependencies:
+      '@iconify-json/lucide':
+        specifier: ^1.2.32
+        version: 1.2.32
       wrangler:
         specifier: 4.1.0
         version: 4.1.0(@cloudflare/workers-types@4.20250317.0)
@@ -642,6 +645,9 @@ packages:
   '@humanwhocodes/retry@0.4.2':
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
+
+  '@iconify-json/lucide@1.2.32':
+    resolution: {integrity: sha512-M5efeHQJhlT8FkAXjW+xGu5/lHUt5VBSjd/u9XxmQy6RGXLRCRi0PcUBosAuKALRT15j+U8dN4eWiDhDZjTbSw==}
 
   '@iconify/collections@1.0.529':
     resolution: {integrity: sha512-4HE68ut6CcJvQ0GFYsg73K9tqIRdy0tRBoTPVpyVjWNzeGm28cr4nDPaDDEJqbyDf3w9Y4AV1QQ+w+Gq6XDboQ==}
@@ -5325,6 +5331,10 @@ snapshots:
   '@humanwhocodes/retry@0.3.1': {}
 
   '@humanwhocodes/retry@0.4.2': {}
+
+  '@iconify-json/lucide@1.2.32':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify/collections@1.0.529':
     dependencies:

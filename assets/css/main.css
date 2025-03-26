@@ -1,2 +1,10 @@
 @import "tailwindcss" theme(static);
 @import "@nuxt/ui";
+
+@theme {
+  --color-brand: #01bc4f;
+  --color-danger: #bc0111;
+  --font-display: Poppins, system-ui, Arial;
+  --font-serif: Martel, Georgia, Times;
+  --font-mono: ui-monospace, Consolas;
+}

@@ -10,11 +10,11 @@ import DigitalIllustration from './DigitalIllustration.json'
     <Vue3Lottie
       :animation-data="DigitalIllustration"
       :height="300"
-      :width="400"
+      :width="380"
     />
     <template #fallback>
       <div
-        style="height: 300px; width: 400px;"
+        style="height: 300px; width: 380px;"
         class="max-w-full"
       />
     </template>
