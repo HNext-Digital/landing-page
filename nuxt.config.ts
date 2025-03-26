@@ -33,7 +33,7 @@ export default defineNuxtConfig({
     ],
   },
   i18n: {
-    baseUrl: 'http://localhost:3000',
+    baseUrl: process.env.NUXT_PUBLIC_BASE_URL ?? 'http://localhost:3000',
     defaultLocale: 'fr',
     langDir: 'locales',
     locales: [
