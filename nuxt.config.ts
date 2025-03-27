@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@vueuse/nuxt',
     '@nuxt/ui',
+    '@pinia/nuxt',
   ],
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],

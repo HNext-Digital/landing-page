@@ -18,7 +18,7 @@ onMounted(() => {
     <!-- Splash Screen -->
     <div class="flex items-center justify-center h-screen w-screen">
       <IconLogo
-        class="w-40 block fill-current"
+        class="w-40 block fill-current pb-14 md:pb-0"
         alt="HNext Digital"
       />
     </div>
