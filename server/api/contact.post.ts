@@ -1,5 +1,5 @@
 export default defineEventHandler(async (event) => {
-  const { discordContactWebhookUrl } = useRuntimeConfig()
+  const { app } = useRuntimeConfig()
   const body = await readBody(event)
 
   let messageForDiscord = ''
@@ -9,8 +9,8 @@ export default defineEventHandler(async (event) => {
   messageForDiscord += `> **Message:**\n> ${body.message}`
 
   // Send webhook to Discord
-  if (discordContactWebhookUrl) {
-    fetch(discordContactWebhookUrl, {
+  if (app.discordContactWebhookUrl) {
+    fetch(app.discordContactWebhookUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
