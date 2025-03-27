@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
     app: {
-      discordContactWebhookUrl: '',
+      discordContactWebhookUrl: process.env.NUXT_APP_DISCORD_CONTACT_WEBHOOK_URL || '',
     },
     public: {
       baseUrl: process.env.NUXT_PUBLIC_BASE_URL || 'https://hnext.fr',
