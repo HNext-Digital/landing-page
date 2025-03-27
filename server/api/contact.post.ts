@@ -1,5 +1,5 @@
 export default defineEventHandler(async (event) => {
-  const { app } = useRuntimeConfig()
+  const config = useRuntimeConfig()
   const body = await readBody(event)
 
   let messageForDiscord = ''
@@ -9,8 +9,8 @@ export default defineEventHandler(async (event) => {
   messageForDiscord += `> **Message:**\n> ${body.message}`
 
   // Send webhook to Discord
-  if (app.discordContactWebhookUrl) {
-    fetch(app.discordContactWebhookUrl, {
+  if (config.app.discordContactWebhookUrl) {
+    fetch(config.app.discordContactWebhookUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ export default defineEventHandler(async (event) => {
     })
   }
   else {
-    console.error('No Discord webhook URL provided in runtime config.')
+    console.error('No Discord webhook URL provided in runtime config.', config)
   }
 
   return { message: 'Data received successfully' }
