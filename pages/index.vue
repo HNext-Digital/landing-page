@@ -1,5 +1,14 @@
 <script setup lang="ts">
-const title = ref('Hello World')
+useSeoMeta({
+  title: 'HNext Digital - Votre Partenaire de Succès dans la Transformation Numérique',
+  ogTitle: 'HNext Digital - Votre Partenaire de Succès dans la Transformation Numérique',
+  description: 'HNext Digital vous accompagne dans votre transformation numérique avec des applications web et mobiles sur mesure. Contactez-nous dès aujourd\'hui pour en savoir plus !',
+  ogDescription: 'HNext Digital vous accompagne dans votre transformation numérique avec des applications web et mobiles sur mesure. Contactez-nous dès aujourd\'hui pour en savoir plus !',
+  ogImage: '/images/ogImage.png',
+  twitterCard: 'summary_large_image',
+})
+
+const title = ref('Welcome to My Amazing Site')
 </script>
 
 <template>
