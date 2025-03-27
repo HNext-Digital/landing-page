@@ -6,7 +6,5 @@
 .bg-class {
   background: url('/images/hero-bg.svg');
   background-size: 200px auto;
-  transform: scale(1.01);
-  image-rendering: crisp-edges;
 }
 </style>
