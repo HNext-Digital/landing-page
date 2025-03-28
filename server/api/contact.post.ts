@@ -1,5 +1,5 @@
 export default defineEventHandler(async (event) => {
-  const { discordContactWebhookUrl } = useRuntimeConfig()
+  const { discordContactWebhookUrl } = useRuntimeConfig(event)
   const body = await readBody(event)
 
   let messageForDiscord = ''
