@@ -23,7 +23,7 @@ export default defineEventHandler(async (event) => {
     })
   }
   else {
-    console.error('No Discord webhook URL provided in runtime config.', config)
+    console.error('No Discord webhook URL provided in runtime config.', config.app)
   }
 
   return { message: 'Data received successfully' }
