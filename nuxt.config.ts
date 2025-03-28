@@ -14,13 +14,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
-    app: {
-      discordContactWebhookUrl: process.env.NUXT_APP_DISCORD_CONTACT_WEBHOOK_URL || '',
-    },
+    discordContactWebhookUrl: '',
     public: {
-      baseUrl: process.env.NUXT_PUBLIC_BASE_URL || 'https://hnext.fr',
+      baseUrl: '',
       i18n: {
-        baseUrl: process.env.NUXT_PUBLIC_BASE_URL || 'https://hnext.fr',
+        baseUrl: '',
       },
     },
   },
