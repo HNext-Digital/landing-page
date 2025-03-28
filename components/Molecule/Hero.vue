@@ -12,7 +12,7 @@
             >
               <span>{{ $t('hero.slogan') }}</span>
             </AtomTitle>
-            <p class="font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-900 via-purple-900 to-blue-400 dark:from-pink-400 dark:via-purple-400 dark:to-blue-400 animate-gradient">
+            <p class="font-medium text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-900 via-purple-900 to-blue-400 dark:from-pink-400 dark:via-purple-400 dark:to-blue-400 animate-gradient">
               <span>{{ $t('hero.description') }}</span>
             </p>
           </div>

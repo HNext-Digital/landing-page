@@ -15,8 +15,9 @@
           </h1>
         </NuxtLinkLocale>
         <div class="flex gap-2">
+          <AtomLocaleModeButton />
           <AtomColorModeButton />
-          <AtomHeaderPanel />
+          <OrganismHeaderPanel />
         </div>
       </div>
     </div>

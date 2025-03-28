@@ -8,7 +8,7 @@ const contactStore = useContactStore()
       :level="2"
       :display-level="6"
     >
-      Contactez-nous dès aujourd'hui
+      {{ $t('contact.longCta') }}
     </AtomTitle>
     <div class="flex align-middle justify-center">
       <input

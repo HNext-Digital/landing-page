@@ -6,6 +6,7 @@ export default {
   },
   contact: {
     cta: 'Contact us',
+    longCta: 'Contact us today',
     description: 'We are here to help you. Feel free to contact us for any questions or requests for information.',
     name: 'Name',
     email: 'Email',
@@ -20,8 +21,18 @@ export default {
     redo: 'Do you want to contact us again?',
   },
   hero: {
-    slogan: 'One team, one mission: your success.',
+    slogan: 'One team, One mission: Your success.',
     description: 'HNext Digital supports you in your digital transformation with custom web and mobile applications.',
     cta: 'Contact us today!',
+  },
+  footer: {
+    intro: 'Made with ❤️',
+    rights: 'All rights reserved.',
+  },
+  pages: {
+    index: {
+      title: 'HNext Digital - Your Success Partner in Digital Transformation',
+      about: 'HNext Digital supports you in your digital transformation with custom web and mobile applications. Contact us today to learn more!',
+    },
   },
 }

@@ -81,6 +81,7 @@ const reset = () => {
               id="email"
               v-model="form.email"
               type="email"
+              autocomplete="email"
               :placeholder="$t('contact.placeholder.email')"
               class="w-full"
               required
