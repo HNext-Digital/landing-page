@@ -14,11 +14,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
-    discordContactWebhookUrl: '',
+    discordContactWebhookUrl: import.meta.env.NUXT_DISCORD_CONTACT_WEBHOOK_URL || '',
     public: {
-      baseUrl: '',
+      baseUrl: import.meta.env.NUXT_PUBLIC_BASE_URL || '',
       i18n: {
-        baseUrl: '',
+        baseUrl: import.meta.env.NUXT_PUBLIC_BASE_URL || '',
       },
     },
   },
