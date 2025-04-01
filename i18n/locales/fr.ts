@@ -1,4 +1,8 @@
 export default {
+  companyName: 'Raison sociale',
+  mail: 'Email',
+  siren: 'SIREN',
+  capital: 'Capital social',
   home: {
     goTo: 'Aller à la page d\'accueil',
     title: 'Bienvenue sur notre site',
@@ -28,6 +32,7 @@ export default {
   footer: {
     intro: 'Fais avec ❤️',
     rights: 'Tous droits réservés.',
+    social: 'Suivez-nous sur les réseaux sociaux',
   },
   pages: {
     index: {

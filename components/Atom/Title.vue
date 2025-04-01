@@ -3,6 +3,7 @@ const props = withDefaults(defineProps<{
   level?: number
   displayLevel?: number
   is?: string
+  gradient?: boolean
 }>(), {
   is: 'h',
 })
@@ -31,12 +32,20 @@ const titleClasses = computed(() => {
       return 'text-sm font-serif md:text-sm leading-[1.3]'
   }
 })
+
+const styles = computed(() => {
+  if (!props.gradient) {
+    return ''
+  }
+
+  return 'text-transparent bg-clip-text bg-gradient-to-r from-neutral-900 via-slate-800 to-blue-600 dark:from-neutral-400 dark:via-slate-100 dark:to-blue-600 animate-gradient'
+})
 </script>
 
 <template>
   <component
     :is="titleTag"
-    :class="titleClasses"
+    :class="[titleClasses, styles]"
   >
     <slot />
   </component>

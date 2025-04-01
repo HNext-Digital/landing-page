@@ -20,16 +20,66 @@ useHead({
   }],
 })
 
-const title = ref('Welcome to My Amazing Site')
+const title = ref('Nos Services')
 </script>
 
 <template>
   <div>
     <MoleculeHero />
-    <div class="container mx-auto py-4 px-4">
-      <AtomTitle :level="2">
-        {{ title }}
-      </AtomTitle>
+    <div class="py-8">
+      <div class="container mx-auto px-4">
+        <AtomTitle
+          :level="2"
+          :display-level="3"
+          :gradient="true"
+        >
+          {{ title }}
+        </AtomTitle>
+      </div>
+    </div>
+    <div class="py-8">
+      <div class="container mx-auto px-4">
+        <AtomTitle
+          :level="2"
+          :display-level="3"
+          :gradient="true"
+        >
+          Nos Réalisations
+        </AtomTitle>
+      </div>
+    </div>
+    <div class="py-8">
+      <div class="container mx-auto px-4">
+        <AtomTitle
+          :level="2"
+          :display-level="3"
+          :gradient="true"
+        >
+          Qui sommes-nous ?
+        </AtomTitle>
+      </div>
+    </div>
+    <div class="py-8">
+      <div class="container mx-auto px-4">
+        <AtomTitle
+          :level="2"
+          :display-level="3"
+          :gradient="true"
+        >
+          Ils nous font confiance
+        </AtomTitle>
+      </div>
+    </div>
+    <div class="py-8">
+      <div class="container mx-auto px-4">
+        <AtomTitle
+          :level="2"
+          :display-level="3"
+          :gradient="true"
+        >
+          Prêt à démarrer votre projet ?
+        </AtomTitle>
+      </div>
     </div>
   </div>
 </template>

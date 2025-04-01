@@ -1,4 +1,8 @@
 export default {
+  companyName: 'Company name',
+  mail: 'Email',
+  siren: 'SIREN',
+  capital: 'Share capital',
   home: {
     goTo: 'Go to the home page',
     title: 'Welcome to our site',
@@ -28,6 +32,7 @@ export default {
   footer: {
     intro: 'Made with ❤️',
     rights: 'All rights reserved.',
+    social: 'Follow us on social media',
   },
   pages: {
     index: {
