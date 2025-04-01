@@ -1,7 +1,5 @@
 {
-  "name": "nuxt-app",
   "private": true,
-  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -13,16 +11,32 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/eslint": "1.1.0",
-    "@nuxthub/core": "0.8.17",
-    "eslint": "^9.0.0",
-    "nuxt": "^3.15.4",
+    "@nuxt/eslint": "1.2.0",
+    "@nuxt/fonts": "0.11.0",
+    "@nuxt/ui": "^3.0.0",
+    "@nuxthub/core": "0.8.18",
+    "@nuxtjs/i18n": "9.3.1",
+    "@pinia/nuxt": "0.10.1",
+    "@vueuse/nuxt": "13.0.0",
+    "eslint": "^9.22.0",
+    "nuxt": "^3.16.0",
+    "pinia": "^3.0.1",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "vue3-lottie": "^3.3.1"
   },
-  "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af",
+  "packageManager": "pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6",
   "devDependencies": {
-    "@nuxtjs/seo": "^2.2.0",
-    "wrangler": "^3.109.3"
+    "@iconify-json/lucide": "^1.2.32",
+    "wrangler": "4.1.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "sharp",
+      "vue-demi",
+      "workerd"
+    ]
   }
 }

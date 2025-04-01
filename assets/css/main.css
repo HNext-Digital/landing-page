@@ -1,0 +1,21 @@
+@import "tailwindcss" theme(static);
+@import "@nuxt/ui";
+
+@theme {
+  --color-brand: #01bc4f;
+  --color-danger: #bc0111;
+  --font-display: Poppins, system-ui, Arial;
+  --font-serif: Martel, Georgia, Times;
+  --font-mono: ui-monospace, Consolas;
+}
+
+@keyframes gradientRotate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientRotate 4s linear infinite;
+}
